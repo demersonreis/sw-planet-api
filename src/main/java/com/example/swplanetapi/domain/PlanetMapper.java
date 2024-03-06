@@ -1,6 +1,9 @@
 package com.example.swplanetapi.domain;
 
-public class PlanetMapper {   
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class PlanetMapper {     
     public Planet mapToPlanet(PlanetDTO dto) {     
         Planet planet = new Planet();
         planet.setClimate(dto.getClimate());

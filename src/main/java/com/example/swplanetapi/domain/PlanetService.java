@@ -5,7 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class PlanetService {
     private PlanetRepository planetRepository;
-    private final PlanetMapper planetMapper;
+    private PlanetMapper planetMapper;
+    
 
     public PlanetService(PlanetRepository planetRepository, PlanetMapper planetMapper) {
         this.planetRepository = planetRepository;
