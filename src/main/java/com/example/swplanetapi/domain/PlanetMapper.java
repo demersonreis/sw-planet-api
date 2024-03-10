@@ -11,4 +11,12 @@ public class PlanetMapper {
         planet.setTerrain(dto.getTerrain());
         return planet;
     }
+    
+    public PlanetDTO mapToDTO(Planet Entity) {     
+        PlanetDTO planet = new PlanetDTO();
+        planet.setClimate(Entity.getClimate());
+        planet.setName(Entity.getName());
+        planet.setTerrain(Entity.getTerrain());
+        return planet;
+    }
 }
