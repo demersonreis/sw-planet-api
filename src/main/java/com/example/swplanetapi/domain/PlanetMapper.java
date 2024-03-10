@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class PlanetMapper {     
-    public Planet mapToPlanet(PlanetDTO dto) {     
+    public Planet mapToEntity(PlanetDTO dto) {     
         Planet planet = new Planet();
         planet.setClimate(dto.getClimate());
         planet.setName(dto.getName());
