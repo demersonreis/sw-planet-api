@@ -1,5 +1,7 @@
 package com.example.swplanetapi.domain;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -25,5 +27,9 @@ public class PlanetService {
         PlanetDTO dto = planetMapper.mapToDTO(planet);
         return dto;    
     }
+
+	public Optional<Planet> planetById(Long id) {
+		return planetRepository.findById(id);
+	}
 
 }
